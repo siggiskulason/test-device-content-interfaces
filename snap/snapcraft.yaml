@@ -1,0 +1,22 @@
+name: test-device-content-interfaces
+base: core18
+version: '0.1'
+summary: Test for EdgeX device services
+description: |
+  Test for EdgeX device services
+
+grade: stable 
+confinement: strict
+
+apps:
+  add-device-profile:
+    command: add-profile.sh
+plugs:
+  device-profiles-plug:
+    interface: content
+    content: device-profiles
+    target: $SNAP_DATA/device-profiles
+parts:
+  myplugpart:
+    source: scripts
+    plugin: dump
