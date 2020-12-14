@@ -1,4 +1,5 @@
 ls $SNAP_DATA/device-profiles
-echo "creating file"
-mktemp $SNAP_DATA/device-profiles/new-profile-XXXXXX.yaml
+
+echo "Copying new profile file"
+cp $SNAP/*.profile.yaml $SNAP_DATA/device-profiles/
 ls $SNAP_DATA/device-profiles
