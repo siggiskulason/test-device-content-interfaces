@@ -4,7 +4,7 @@
 
 ```
 sudo snap remove edgex-device-rfid-llrp
-sudo snap install --dangerous edgex-device-rfid-llrp_0.0.0-20201214+1dd3f82_amd64.snap
+sudo snap install --dangerous edgex-device-rfid-llrp_*_amd64.snap
 ```
 
 ## View the logs for the device snap
