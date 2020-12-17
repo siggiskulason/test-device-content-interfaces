@@ -3,7 +3,7 @@
 ## Build and install the device snap to test
 
 ``` 
-sudo snap install edgex-rfid-llrp-inventory --channel=[the channel you are using]
+sudo snap install edgex-device-rfid-llrp --channel=[the channel you are using]
 ```
 
 ## View the logs for the device snap
