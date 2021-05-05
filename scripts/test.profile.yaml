@@ -1,0 +1,20 @@
+name: "sample-profile"
+manufacturer: "Canonical"
+model: "JPEG image device"
+labels:
+ - "rest"
+ - "binary"
+description: "Device that sends in jpg image"
+
+deviceResources:
+  - name: jpeg
+    description: "JPEG Image"
+    properties:
+      value:
+        { type: "Binary", readWrite: "W", mediaType : "image/jpeg" }
+      units:
+        { type: "String", readWrite: "R" }
+deviceCommands:
+  - name: PostImage
+    get:
+      - { operation: "get", deviceResource: "jpeg"} 

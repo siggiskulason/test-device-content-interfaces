@@ -12,9 +12,9 @@ apps:
   add-device-profile:
     command: add-profile.sh
 plugs:
-  device-profiles-plug:
+  device-config:
     interface: content
-    content: device-profiles
+    content: device-config
     target: $SNAP_DATA/device-profiles
 parts:
   myplugpart:
