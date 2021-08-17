@@ -3,13 +3,13 @@
 ## Build and install the device snap to test
 
 ``` 
-sudo snap install edgex-device-rest-go --channel=[the channel you are using]
+sudo snap install edgex-device-rest --channel=[the channel you are using]
 ```
 
 ## View the logs for the device snap
 
 ```
-snap logs -f edgex-device-rfid-llrp.device-rfid-llrp-go
+snap logs -f edgex-device-rest
 ```
 
 ## Build and install the test snap
