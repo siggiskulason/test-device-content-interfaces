@@ -11,7 +11,7 @@ confinement: strict
 apps:
   add-device-profile:
     command: add-profile.sh
-plugs:
+slots:
   device-config:
     interface: content
     content: device-config
