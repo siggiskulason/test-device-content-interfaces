@@ -27,7 +27,7 @@ sudo test-device-content-interfaces.add-device-profile
 ## Verify that the profile has been added
 
 ```
-sudo snap restart edgex-device-rest-go
+sudo snap restart edgex-device-rest
 curl http://localhost:48081/api/v1/deviceprofile | jq
 ```
 
